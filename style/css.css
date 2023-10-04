@@ -1,0 +1,17 @@
+form.painel {
+    background-color: aqua;
+    border-radius: 10px 100px / 100px;
+    font-size: large;
+    align-items: center;
+    width: 300px;
+    height: 200%;
+}
+div.up, h1.titulo, div.login, div.senha, div.but, div.reg {
+    text-align: center;
+}
+
+form.formulario {
+    background-color: darkgray;
+    border-radius: 30px;
+    text-align: center;
+}
