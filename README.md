@@ -4,7 +4,7 @@ Desenvolvido por: Reinaldo Lira
 
 # Objetivo
 - melhorar habilidades de CSS com responsividade
-- recriando um modelo de site existente na web com a IDE: visual studio code(https://www.bing.com/images/search?q=Visual+Studio+Code+Imagem+PNG&FORM=IRTRRL)
+- recriando um modelo de site existente na web com a IDE: visual studio code()
 
 # tecnologias empregadas no projeto:
 * HTML
