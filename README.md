@@ -4,7 +4,7 @@ Desenvolvido por: Reinaldo Lira
 
 # Objetivo
 - melhorar habilidades de CSS com responsividade
-- recriando um modelo de site existente na web com a IDE: visual studio code(https://raw.githubusercontent.com/reinaldolds/login01/main/style/img/vscodeicone.jfif)
+- recriando um modelo de site existente na web com a IDE: visual studio code
 
 # tecnologias empregadas no projeto:
 * HTML
