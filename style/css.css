@@ -1,36 +1,269 @@
-body {
-    background-image: url(img/fundoloja02.jpg);
+* {
     margin: 0;
-    border: 0;
+    padding: 0;
 }
-div.itens {
-    background-color: blueviolet;
-    border-radius: 50px;
-    height: 300px;
-    width: 500px;
+.rei {
+    background-color: rgb(21, 21, 21);
+    color: white;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    height: 10vh;
+    padding: 20px;    
 }
-input.login, input.senha {
-    border-radius: 100px;
+.re2, .re1, .re3 {
+    margin-left: 10%;
+}
+.re3:hover {
+    color: aliceblue;
+}
+.del {
+    color: rgb(249, 172, 6);
+}
+.aut {
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.aut,.del {
+    float: left;
+}
+#rs {
+    background-color: gray;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;   
+}
+#rs {
+    color: black;
+    border: solid 1px;
+    border-radius: 10%;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 5%;
+    
+}
+b {
+    font-size: large;
+}
+/* estilização de nav*/
+.nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#bra {
+    text-decoration: none;
+    color: black;    
+}
+#bra:hover{
+    background-color: rgb(43, 43, 44);
+    transition: all .3s ease-in-out;
+    color: white;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#pinput, #pbutton {
     height: 30px;
-    width: 50%;
+    border-radius: 5px;
+    box-shadow: none;
 }
-label, button.botao {
+#pbutton {
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+#pbutton:hover {
+    background-color: rgb(43, 43, 44);
+    transition: all .3s ease-in-out;
+    color: white;
+}
+.top {
+    background-color: rgb(219, 217, 217);
+}
+#car {
+    width: 700px;
+    height: 438px;
+}
+.prin {
+    display: flex;
+    padding: 20px;
+    padding-left: 110px;
+}
+#form2 {
+    border: solid 1px rgb(219, 217, 217);
+    margin-left: 20px;
+    width: 300px;
+    background-color: rgb(250, 247, 247);
+
+}
+#years, #years1 {
+    width: 100px;
+    height: 30px;
+    border: solid 2px rgb(219, 217, 217);
+    border-radius: 3px;
+}
+#years {
+    margin-left: 10px;
+   
+}
+.meno {
+    display: flex;
+    margin-right: 10px; 
+    justify-content: center;
+}
+#mod, #fab {
+    height: 30px;
+}
+.h22 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #888888;
+}
+#ico:hover {
+    transform: scale(1.2);
+    color: orange;
+}
+#labf{
+    padding-left: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 1px #888888;
+
 }
-button.botao {
-    border-radius: 50px;
-    background-color: rgb(73, 73, 227);
-    height: 30px;
-    width: 20%;
-    color: darkblue;
-    transition: background-color 0.3s ease;
+#fab, #mod {
+    margin-left: 40px;
+    width: 210px;
+    border: solid 1px rgb(219, 217, 217);
 }
-.botao:hover {
-    background-color: cornflowerblue;
+.finfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
 }
+.fff {
+    display: flex;
+    margin-left: 17px;
+}
+#butf {
+    margin-right: 28px;
+    height: 35px;
+    width: 70px;
+    background-color: rgb(39, 39, 39);
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+#butf:hover {
+    background-color: #525151;
+    box-shadow: inset -6px -6px 15px rgb(83, 83, 82);
+}
+.footc {
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: 200px;
+}
+p {
+    color: aliceblue;
+}
+.footcont {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+#fottitlle, #ft {
+    color: aliceblue;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+#ft:hover {
+    transform: scale(1.2);
+}
+.foot {
+    display: grid;
+}
+.hr1 {
+    width: 200px;
+    
+}
+
+
+
+
+    @media only screen and (min-width: 700px) {
+        header {
+            width: 100%;
+        }
+
+    }
+    @media only screen and (max-width: 700px) {
+        header {
+            display: inline;
+            overflow: hidden;
+            position: static;
+        }
+        .rei {
+            width: 100%;
+            
+        }
+        .top {
+            width: 100%;
+            height: 100px;
+        }
+        .nav {
+            display: block;
+        }
+        .prin {
+            display: block;
+        }
+        #car {
+            width: 90%;
+        }
+        #form2 {
+            width: 80%;
+            margin-top: 20px;
+    
+        }
+        .footc {
+            width: 100%;
+            height: auto;
+        }
+        .footcont {
+            display: block;
+        }
+        .re2, .re1, .re3 {
+            margin-left: 0%;
+        }
+        .re3 {
+            display: grid;
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+        #rs {
+            font-size: 40px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: #d2c8c8;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: -20px;
+            background: none;
+            border:none ;
+            width: 10%;
+            height: 20%;
+
+        }
+    }

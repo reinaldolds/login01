@@ -3,37 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Login</title>
+    <title>Página Carros</title>
     <link rel="stylesheet" href="style/css.css">
+    
 </head>
 <body>
-    <div class="up">
-        <main>
-            <form class="painel" action="index2.html" method="get">
-                <div class="itens">
-                    <header>
-                        <h1 class="titulo">Login</h1>
-                    </header>
-                    <div class="login">
-                        <label for="login">Login:</label>
-                        <input type="text" class="login" placeholder="Escreva Nome">
+    <header>
+        <div class="rei">
+            <div class="re2">
+                <h1 class="aut">Auto</h1><h1 class="del">Dealer</h1>
+            </div>
+            <p class="re1"><b>+55 (83) 9999-9999</b><br>Estamos localizados na: rua epitácio pessoa nº1002/João Pessoa/PB</p>
+            <div class="re3">
+                <a id="rs" href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a id="rs" href="https://www.linkedin.com/notifications/?filter=all"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a id="rs" href="https://twitter.com/home?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="nav">
+                <a id="bra" href="">Home</a>
+                <a id="bra" href="">About Us</a>
+                <a id="bra" href="">Blog</a>
+                <a id="bra" href="">News</a>
+                <a id="bra" href="">For Salers</a>
+                <a id="bra" href="">Contacts</a>
+                <form action="">
+                    <input id="pinput" type="text" placeholder="Search one site">
+                    <button id="pbutton" type="submit" onclick="primeira()">SEARCH</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="prin">
+            <img id="car" src="style/img/Camaro chevrolet.jpg" alt="">
+            <form id="form2" action="">
+                <div class="h22">
+                    <h2 id="h222">Search auto</h2>
+                    <a id="ico" href=""><ion-icon name="car-sport-outline"></ion-icon></a>
+                    <a id="ico" href=""><ion-icon name="bicycle-outline"></ion-icon></a>
+                    <a id="ico" href=""><ion-icon name="bus-outline"></ion-icon></a>
+                    <a id="ico" href=""><ion-icon name="car-outline"></ion-icon></a>
+                </div><br>
+                <label id="labf" for="">Manufactorer:</label><br>
+                <input id="fab" list="fabricantes" placeholder="Any">
+                <datalist id="fabricantes">
+                    <option value="Chevrolet"></option>
+                    <option value="volksvagen"></option>
+                    <option value="Fiat"></option>
+                    <option value="Hyundi"></option>
+                </datalist><br>
+                <label id="labf" for="modelo">Model:</label><br>
+                <input id="mod" list="modelos" placeholder="Any">
+                <datalist id="modelos">
+                    <option value="Agile"></option>
+                    <option value="Astra"></option>
+                    <option value="Onix"></option>
+                    <option value="Aveo"></option>
+                    <option value="Corsa"></option>
+                    <option value="Gol"></option>
+                    <option value="Fox"></option>
+                    <option value="Saverio"></option>
+                    <option value="Polo"></option>
+                    <option value="Punto"></option>
+                    <option value="Mobi"></option>
+                    <option value="Touro"></option>
+                    <option value="uno"></option>
+                    <option value="Hb20"></option>
+                    <option value="i30"></option>
+                    <option value="Tucson"></option>
+                </datalist><br>
+                <label id="labf" for="year">Year:</label><br>
+                <div class="meno">
+                <input id="years1" list="years"  min="2000" max="2024" required placeholder="From">
+                <datalist id="years">
+                    <option value="2010"></option>
+                    <option value="2011"></option>
+                    <option value="2012"></option>
+                    <option value="2013"></option>
+                    <option value="2014"></option>
+                    <option value="2015"></option>
+                    <option value="2016"></option>
+                    <option value="2017"></option>
+                    <option value="2018"></option>
+                    <option value="2019"></option>
+                    <option value="2020"></option>
+                    <option value="2021"></option>
+                </datalist><br>
+                
+                <input id="years" list="years"  min="2000" max="2024" required placeholder="To">
+                <datalist id="years">
+                    <option value="2010"></option>
+                    <option value="2011"></option>
+                    <option value="2012"></option>
+                    <option value="2013"></option>
+                    <option value="2014"></option>
+                    <option value="2015"></option>
+                    <option value="2016"></option>
+                    <option value="2017"></option>
+                    <option value="2018"></option>
+                    <option value="2019"></option>
+                    <option value="2020"></option>
+                    <option value="2021"></option>
+                </datalist>
+                </div><br>
+                <label id="labf" for="modelo">Price:</label><br>
+                <div class="meno">
+                <input id="years1" list="modelos" placeholder="From">
+                <datalist>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </datalist><br>
+               
+                <input id="years" list="modelos" placeholder="To">
+                <datalist>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </datalist>
+                </div>
+                <br>
+                <label id="labf" for="modelo">Mileage:</label><br>
+                <div class="meno">
+                <input id="years1" list="modelos" placeholder="From">
+                <datalist>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </datalist><br>
+                
+                <input id="years" min="0" max="1000000" placeholder="To">
+                </div><br>
+                <div class="finfo">
+                    <div class="fff">
+                    <input type="checkbox" name="" id="" style="background-color: rgb(219, 217, 217);"><p style="margin-left: 3px; color: black;">Only new cars</p>
                     </div>
-                    <br>
-                    <div class="senha" id="senha">
-                         <label for="senha" id="senha">Senha:</label>
-                        <input type="password" class="senha" placeholder="Digite a senha">
-                    </div>
-                    <br>
-                    <div>
-                        <button class="botao" type="submit">Entrar</button>
-                    </div>
-                        <br>
-                    <div class="reg" id="reg">
-                        <h5>&copy; Criar conta: <a href="index3.html" style="color: rgb(13, 26, 65);">Fazer agora</a></h5>
-                    </div>
+                    <button id="butf" type="submit">SEARCH</button>
                 </div>
             </form>
-        </main>
-    </div>         
+        </div>
+    </main>
+    <footer class="footc">
+        <div class="footcont">
+            <div class="foot">
+                <a id="fottitlle"><b>About</b> us</a>
+                <hr class="hr1"><br>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Contacts</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Our partners</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Advertising Online</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Site Map</a>
+            </div>
+            <div class="foot">
+                <a id="fottitlle"><b>Need</b> help?</a>
+                <hr class="hr1"><br>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Contacts</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Our partners</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Advertising Online</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Site Map</a>
+            </div>
+            <div class="foot">
+                <a id="fottitlle"><b>User</b> area</a>
+                <hr class="hr1"><br>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Contacts</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Our partners</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Advertising Online</a>
+                <a id="ft" href=""><ion-icon name="caret-forward-outline" style="color: white;"></ion-icon>Site Map</a>
+            </div>
+            <div class="foot">
+                <div class="re3">
+                    <a id="fottitlle"><b>Find</b> us here</a>
+                    <hr class="hr1" style="margin-top: 5px;">
+                    <a id="rs" href="https://www.instagram.com/"><ion-icon name="logo-instagram" style="margin-top: 30px;"></ion-icon></a>
+                    <a id="rs" href="https://www.linkedin.com/notifications/?filter=all"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a id="rs" href="https://twitter.com/home?lang=en"><ion-icon name="logo-twitter"></ion-icon></a>
+                </div>
+            </div>
+            <div class="foot">
+
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--JavaScript para funções-->
+<script src="style/script.js" ></script>
 </body>
 </html>
